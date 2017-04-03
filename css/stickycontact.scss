@@ -1,0 +1,145 @@
+.stickycontact{
+	position: fixed;
+    z-index: 9;
+    top: 25%;
+    @media (max-width:1280px){
+    	top: 22%;	   
+    }
+    @media (max-width:768px){
+    	display: none;
+    }
+    @media (max-width:480px){
+    	top: 9%;
+    }
+ 		.contact-body{
+ 			background-color: #eee;
+    		width: 350px;
+    		padding: 20px 30px 27px;
+    		@media (max-width:480px){
+    			width: 250px;
+    		}
+    		h3{
+    			font-size: 17px;
+    			font-weight: 600;
+    			margin-bottom: 20px;
+    			text-transform: uppercase;
+    		}
+    		form{
+    		  @include flexFlow;
+    		  .form-group{
+    		  	width: 49%;
+    		  }
+    		  .form-group:nth-child(even){
+    		  	margin-left: 2%;
+    		  }
+    			input{
+    				border-radius:0px;
+    				height: 35px !important;
+    			
+    			}
+    			textarea{
+    				border-radius:0px;
+    				height: 50px;
+    			}
+    			button{
+    				background-color: #ea1328;
+				    color: white;
+				    font-size: 16px;
+				    font-weight: 700;
+				    width: 100%;
+				    border-radius: initial;
+				    padding: 10px;
+				    border: 3px solid #ea1328;
+				    border-color: $red2;
+				    transition: background-color .5s;
+				    margin-top: 15px;
+				    &:hover{
+						background-color:transparent;
+						color:$red2;
+				    }
+    			}
+    		}
+ 		}
+
+ 		.contact-opener{
+			background-color:black;
+			padding:15px;
+			position:absolute;
+			top:49px;
+			transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+			-moz-transform:rotate(-90deg);
+			z-index:9;
+			left: -103px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+			@media (max-width:1280px){
+				top:100px;
+			}
+			@media (max-width:768px){
+				top:141px;
+			}
+			&:hover{
+				color:$bluelight;
+				text-decoration: none;
+			}
+			&:focus, &:active{
+				text-decoration: none;
+			}
+			i{
+				vertical-align: bottom;
+				color:$bluelight;
+			}
+		}
+
+		.chat-opener{
+			background-color:#1e3e65;
+			padding:15px;
+			position:absolute;
+			top:171px;
+			transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+			-moz-transform:rotate(-90deg);
+			z-index:9;
+			left: -74px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+			@media (max-width:1280px){
+				top:220px;
+			}
+			@media (max-width:768px){
+				top:141px;
+			}
+			&:hover{
+				color:$bluelight;
+				text-decoration: none;
+			}
+			&:focus, &:active{
+				text-decoration: none;
+			}
+			i{
+				vertical-align: bottom;
+				color:$bluelight;
+			}
+		}
+}
+
+.stickycontact.inactive{
+	-webkit-transition: linear .35s;
+			transition: linear .35s;
+	right: -351px;
+	@media (max-width:480px){
+		right: -250px;
+	}
+}
+
+.stickycontact.active{
+	-webkit-transition: linear .35s;
+			transition: linear .35s;
+	right: 0;
+	z-index: 9999;
+}

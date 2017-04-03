@@ -1,0 +1,68 @@
+@mixin flexFlow {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin nopadding{
+  padding:0;
+}
+
+@mixin cover {
+ -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; 
+}
+
+
+@mixin cero {
+  padding: 0;
+  margin: 0;
+  }
+
+@mixin redbutton{
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $red;
+  border:3px solid $red;
+  padding: 15px 40px;
+  font-size: 17px;
+  color: white;
+  transition: linear .5s;
+  -webkit-transition:linear .5s;
+  -moz-transition:linear .5s;
+  &:hover{
+  background-color: transparent;
+  color:$red;
+  text-decoration: none;
+  border:3px solid $red;
+  }
+}
+
+@mixin listarrows {
+    list-style-type: none;
+    font-weight: 100;
+    margin:0px 15px 5px;
+        &:before{
+        content: "\f103";
+        font-family: "Flaticon";
+        display: inline-block;
+        margin-left: -1.7em;
+        width: 1.7em;
+        font-size: 11px;
+        color: #FF0B24;
+        }
+  }

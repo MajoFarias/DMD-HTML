@@ -1,0 +1,26 @@
+
+.colaborarionesHead{
+	background-position: center center;
+	@media (max-width:768px){
+		margin-bottom: 0px;
+	}
+	article{
+		.video-comunidad{
+			margin-top: 60px !important;
+			width:55% !important;
+			@media (max-width:768px){
+				width:100% !important;
+				margin-top: 0px !important;
+			}
+		}
+		.comunidad-list{
+			margin-top: 60px;
+			width:45% !important;
+			@media (max-width:768px){
+				width:100% !important;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+

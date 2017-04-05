@@ -1,7 +1,7 @@
 
 
 // colores
-.bgRed{background: $red !important; }
+.bgRed{background: $red !important; } 
 .colorRed{color: $red !important; }
 
 .bgRed2{background: $red2 !important; }
@@ -36,5 +36,44 @@
 .colorAqua{color: $aqua !important; }
 
 
+.lineTitleWhite::after {
+    background: #ffffff none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 15px auto 30px;
+    text-align: center;
+    width: 100px;
+}
 
+.suscripcion .suscripTitleWhite::after {
+    margin: 15px 0 30px;
+}
+
+.order1{
+  article:nth-child(1){
+     @include order(1);
+  }
+   article:nth-child(2){
+     @include order(2);
+  }
+
+}
+
+.order2{ 
+	article:nth-child(1){
+     @include order(1);
+    }
+   article:nth-child(1){
+     @include order(1);
+    }
+    @media(min-width:768px){
+		   article:nth-child(2){
+		     @include order(1);
+		    }
+		   article:nth-child(1){
+		     @include order(2);
+		    }
+    }
+}
 

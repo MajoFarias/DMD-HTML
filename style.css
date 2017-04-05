@@ -4335,19 +4335,19 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp; }
 
 .white {
-  color: white; }
+  color: white !important; }
 
 .red {
-  color: #FF0B24; }
+  color: #FF0B24 !important; }
 
 .margin-bottom {
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
 
 .margin-top {
-  margin-top: 30px; }
+  margin-top: 30px !important; }
 
 .no-padding {
-  padding: 0; }
+  padding: 0 !important; }
 
 ul.general {
   padding: 0;
